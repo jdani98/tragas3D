@@ -32,5 +32,10 @@ Go to _settings/data.py_ to introduce the name of the file with the data and sel
 
 ### 3.3. Outputs by screen
 Go to _settings/screen.py_ to determine the appearance of the outputs by screen. The user can activate and desactivate the graphics and some elements of them. The hit pads can be coloured in function of their delay. The _delay_ is defined as the time difference between the real hit and a hypothetical hit that came from the first hit at the speed of light. The tracks can be configured to be painted with colour which depends on their velocity. If the velocity is out of the limits given by the tolerance, the track is denied. The user can decide to watch those denied tracks or not.
+To desactivate the options write _False_.
 
 ### 3.4. Saving files
+The plots and the information about the computed tracks can be saved in a folder named _OUTPUTS_ by default. To determine the preffix of the name of the output files and the resolution of the graphics go to _settings/saving.py_.
+
+## 4. More about tracks
+The tracks are simply straight segments which join two hits. The first hits which are joined are those from adjacent planes, as a particle is not supossed to transverse a plane without being detected. The hits that cannot be joined by tracks between adjacent planes are matched by tracks traversing some plane, if _plane2 _and _plane3_ are activated at _settings/screen.py_.
