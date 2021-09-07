@@ -3,7 +3,7 @@
 
 ## 1. How to run tragas3D
 It is neccessary to have installed the latest version of python, _python 3_.
-To run tragas3D in a command prompt, use as pwd tragas3D directory and run **python3 main.py**.
+To run tragas3D in a command prompt, use as pwd tragas3D directory and type **python3 main.py**.
 The directory must contain a file with data formatted with one of the formats that is supported by the routines inside _modules/reading.py_.
 
 ## 2. Modes of visualization
