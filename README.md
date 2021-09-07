@@ -16,9 +16,9 @@ Once the program has started, the user must choose the mode of visualization:
   ```
   * **Mode B. Selection by topology**: The events can be classified by a 6-digit code which basically determines the number of hits and tracks and the planes. _modules/topology.py_ contains the subroutines to compute each digit and the 6 digits which shape the code are indicated in _main.py_. The selection can restrict only some digits, thus the user can let be free the rest of them by writing a non-alphanumeric character. For example,
   ```
-   > 3----- returns all events with this first digit;'+\
-   > 31---- returns all events with these two first digits'+\
-   > -4-1-0 returns all events with these second, fourth and sixth digits'+\
+   > 3----- returns all events with this first digit
+   > 31---- returns all events with these two first digits
+   > -4-1-0 returns all events with these second, fourth and sixth digits
   ```
 
 ## 3. Settings
@@ -35,7 +35,10 @@ Go to _settings/screen.py_ to determine the appearance of the outputs by screen.
 To desactivate the options write _False_.
 
 ### 3.4. Saving files
-The plots and the information about the computed tracks can be saved in a folder named _OUTPUTS_ by default. To determine the preffix of the name of the output files and the resolution of the graphics go to _settings/saving.py_.
+The plots and the information about the computed tracks can be saved in a folder named _OUTPUTS_ by default. To determine the preffix of the name of the output files and the resolution of the graphics go to _settings/saving.py_. If some option of saving files is activated, at the beginning of the program the name of the directory to save will be requested.
 
 ## 4. More about tracks
 The tracks are simply straight segments which join two hits. The first hits which are joined are those from adjacent planes, as a particle is not supossed to transverse a plane without being detected. The hits that cannot be joined by tracks between adjacent planes are matched by tracks traversing some plane, if _plane2 _and _plane3_ are activated at _settings/screen.py_.
+
+## 5. To be continue...
+This program is susceptible to more changes...
