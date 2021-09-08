@@ -5,8 +5,8 @@ import params.constants as cts
 
 
 #******* Plots and screen configuration ***********************************************************
-showlog = False       # -!- True to show all plots
-prinlog = False       # -!- True to print information about tracks
+showlog = True        # -!- True to show all plots
+prinlog = True        # -!- True to print information about tracks
 colpads = True        # -!- True to color pads in function of their delay
 plane1  = True        # -!- True to show possible tracks between two adjacent planes
 plane2  = True        # -!- True to show tracks between two separated planes (discontinuous lines)

@@ -70,19 +70,19 @@ def TRACKLINES(axs,coord,style='-',alfa=1.0,line_st='col'):
 	
     if line_st == 'acc':
         for item in coord:
-            axs.plot(item[2],item[3],item[4],color='red',alpha=alfa)
+            axs.plot(item[2],item[3],item[4],linestyle=style,color='red',alpha=alfa)
 	
     if line_st == 'den':
         for item in coord:
-            axs.plot(item[2],item[3],item[4],color='green',alpha=alfa)
+            axs.plot(item[2],item[3],item[4],linestyle=style,color='green',alpha=alfa)
 		
     if line_st == 'col':
         for item in coord:
             icol = int((item[1]-(1-setdet.tol_lo)*cts.c)/(setscr.vstcol))
             if icol<20 and icol>=0:
-                axs.plot(item[2],item[3],item[4],color=setscr.ifcolors[icol],alpha=alfa)
+                axs.plot(item[2],item[3],item[4],linestyle=style,color=setscr.ifcolors[icol],alpha=alfa)
             else:
-                axs.plot(item[2],item[3],item[4],color='red',alpha=alfa)
+                axs.plot(item[2],item[3],item[4],linestyle=style,color='red',alpha=alfa)
                 print('WARNING. Velocity out of colour limits. Track painted in red instead')
 	
     return

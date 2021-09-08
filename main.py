@@ -188,7 +188,7 @@ while (cont != 'exit'):
         print('Code created with format NOH,NOT,NOV,NOH1P,NOH3P,NOH4P')
 
         if plan2:
-            accepted2,denied2,new_coord2 = subroutine_for_lines(ax,new_coord1,2,'--',0.9)
+            accepted2,denied2,new_coord2 = subroutine_for_lines(ax,new_coord1,2,'dashed',0.9)
             accepted = accepted + accepted2 ;  denied = denied + denied2
 
         if plan3:

@@ -1,0 +1,3 @@
+Outputs folder:
+     * Information about tracks
+     * Graphs
